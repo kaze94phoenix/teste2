@@ -24,7 +24,7 @@
 		<td><?php echo h($film['Film']['category']); ?>&nbsp;</td>
 		<td><?php echo h($film['Film']['actor']); ?>&nbsp;</td>
 		<td><?php echo h($film['Film']['author']); ?>&nbsp;</td>
-		<td><?php echo h($film['Film']['status_id']); ?>&nbsp;</td>
+		<td><?php echo h($film['Status']['designation']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $film['Film']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $film['Film']['id'])); ?>
