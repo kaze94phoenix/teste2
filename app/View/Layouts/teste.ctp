@@ -206,14 +206,14 @@
               	  	
                   <li class="mt">
                       <a href="<?php echo $this->Html->url('/clients')?>">
-                          <i class="fa fa-dashboard"></i>
+                          <i class="fa fa-users"></i>
                           <span>Clients</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
                       <a href="<?php echo $this->Html->url('/films')?>" >
-                          <i class="fa fa-desktop"></i>
+                          <i class="fa fa-film"></i>
                           <span>Films</span>
                       </a>
                       
@@ -221,7 +221,7 @@
 
                   <li class="sub-menu">
                       <a href="<?php echo $this->Html->url('/borrows')?>" >
-                          <i class="fa fa-cogs"></i>
+                          <i class="fa fa-exchange"></i>
                           <span>Borrows</span>
                       </a>
                       
