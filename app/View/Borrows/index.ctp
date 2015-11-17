@@ -1,5 +1,9 @@
 <div class="borrows index">
     <div class="content-panel">
+        <?php echo $this->Form->create('find',array('controller'=>'borrows', 'action'=>'findperdate'));
+        $this->Form->input(array('class'=>'form-control round-form'));
+        $this->Form->submit('Pesquisar',array('class'=>'btn btn-round btn-default'));
+        ?>
 	                  	  	  <h4><i class="fa fa-angle-right"></i><?php echo __('Borrows'); ?></h4>
 	                  	  	  <hr>
 		                      <table class="table">

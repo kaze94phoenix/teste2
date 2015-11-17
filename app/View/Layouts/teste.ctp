@@ -14,7 +14,12 @@
     <!-- Custom styles for this template -->
     <link href="http://localhost:8080/teste2/assets/css/style.css" rel="stylesheet">
     <link href="http://localhost:8080/teste2/assets/css/style-responsive.css" rel="stylesheet">
-
+    <link href="http://localhost:8080/teste2/assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:8080/teste2/assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="http://localhost:8080/teste2/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
