@@ -109,6 +109,16 @@ class BorrowsController extends AppController {
 	}
         
         public function findperdate(){
-            
+        $query = $this->request->data['Borrow']['find']; // recebe o parametro de pesquisa, com Modelo=Task e input-id=buscador
+
+        $conditions = array(
+            'conditions' => array(
+                'Borrow.retrievedate LIKE' => "%$query%"
+            )
+        );
+
+        $this->Paginator->settings = $conditions;
+        $borrows = $this->Paginator->paginate('Borrow');
+        $this->set(compact('borrows'));
         }
 }

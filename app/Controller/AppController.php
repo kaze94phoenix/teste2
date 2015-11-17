@@ -32,8 +32,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
       public $components = array(
-        'Auth',
-        'Session', 'Acl','RequestHandler'
+        'Session', 'RequestHandler'
     );
     public $helpers = array(
         'Session',
