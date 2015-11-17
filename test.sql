@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Nov-2015 às 11:42
+-- Generation Time: 17-Nov-2015 às 13:25
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -35,14 +35,17 @@ CREATE TABLE IF NOT EXISTS `borrows` (
   PRIMARY KEY (`id`),
   KEY `client_id` (`client_id`),
   KEY `movie_id` (`film_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Extraindo dados da tabela `borrows`
 --
 
 INSERT INTO `borrows` (`id`, `retrievedate`, `client_id`, `film_id`, `retrieved`) VALUES
-(1, '2015-12-14 11:36:00', 1, 2, 0);
+(1, '2015-12-14 11:36:00', 1, 2, 0),
+(2, '2015-11-18 05:19:36', 2, 2, 0),
+(3, '2032-11-17 12:44:00', 2, 3, 0),
+(4, '2032-11-17 12:44:00', 2, 3, 0);
 
 -- --------------------------------------------------------
 
