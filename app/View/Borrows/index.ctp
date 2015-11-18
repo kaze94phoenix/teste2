@@ -14,6 +14,7 @@
 			<th><?php echo $this->Paginator->sort('retrievedate'); ?></th>
 			<th><?php echo $this->Paginator->sort('client_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('film_id'); ?></th>
+                        <th><?php echo $this->Paginator->sort('copies'); ?></th>
 			<th><?php echo $this->Paginator->sort('retrieved'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -29,6 +30,7 @@
 		<td>
 			<?php echo $this->Html->link($borrow['Film']['title'], array('controller' => 'films', 'action' => 'view', $borrow['Film']['id'])); ?>
 		</td>
+                <td><?php echo h($borrow['Borrow']['copies']); ?>&nbsp;</td>
 		<td><?php echo h($borrow['Borrow']['retrieved']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $borrow['Borrow']['id'])); ?>

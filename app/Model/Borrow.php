@@ -44,6 +44,26 @@ class Borrow extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		'copies' => array(
+			'numeric' => array(
+				'rule' => array('comparison','<=',3),
+				'message' => 'So pode registar 3 copias no maximo',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),'copies' => array(
+			'numeric' => array(
+				'rule' => array('comparison','>',0),
+				'message' => 'Nao podes emprestar 0 copias',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+                
 		'retrieved' => array(
 			'boolean' => array(
 				'rule' => array('boolean'),

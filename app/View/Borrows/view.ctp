@@ -55,6 +55,11 @@
 			<?php echo $this->Html->link($borrow['Film']['title'], array('controller' => 'films', 'action' => 'view', $borrow['Film']['id'])); ?>
 			&nbsp;
 		</dd>
+                <dt><?php echo __('Copies'); ?></dt>
+		<dd>
+			<?php echo h($borrow['Borrow']['copies']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Retrieved'); ?></dt>
 		<dd>
 			<?php echo h($borrow['Borrow']['retrieved']); ?>

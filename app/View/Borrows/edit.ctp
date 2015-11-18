@@ -7,6 +7,7 @@
 		echo $this->Form->input('retrievedate');
 		echo $this->Form->input('client_id');
 		echo $this->Form->input('film_id');
+                echo $this->Form->input('copies');
 		echo $this->Form->input('retrieved');
 	?>
 	</fieldset>
