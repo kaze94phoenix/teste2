@@ -110,10 +110,10 @@ class BorrowsController extends AppController {
         
         public function findperdate(){
         $query = $this->request->data['Borrow']['find']; // recebe o parametro de pesquisa, com Modelo=Task e input-id=buscador
-
+        $date=$query['year']."-".$query['month']."-".$query['day'];
         $conditions = array(
             'conditions' => array(
-                'Borrow.retrievedate LIKE' => "%$query%"
+                'Borrow.retrievedate LIKE' => "%$date%"
             )
         );
 

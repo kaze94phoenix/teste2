@@ -2,7 +2,7 @@
     <div class="content-panel">
         <?php 
         echo $this->Form->create(array('controller'=>'borrows', 'action'=>'findperdate','type'=>'post'));
-        echo $this->Form->input('find',array('placeholder'=>'Pesquisa por data YYYY-MM-DD', 'class'=>'form-control round-form'));
+        echo $this->Form->input('find',array('placeholder'=>'Pesquisa por data YYYY-MM-DD', 'class'=>'form-control round-form', 'type'=>'date'));
         echo $this->Form->submit('Pesquisar',array('class'=>'btn btn-round btn-default'));
         echo $this->Form->end();
         ?>

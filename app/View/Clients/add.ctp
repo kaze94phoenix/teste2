@@ -4,7 +4,7 @@
 		<legend><?php echo __('Add Client'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
-		echo $this->Form->input('gender');
+		echo $this->Form->radio('gender',array('M'=>'M','F'=>'F'));
 		echo $this->Form->input('zone');
 		echo $this->Form->input('disctrict');
 		echo $this->Form->input('docnr');
