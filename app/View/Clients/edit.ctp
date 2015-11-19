@@ -3,12 +3,11 @@
 	<fieldset>
 		<legend><?php echo __('Edit Client'); ?></legend>
 	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
+		echo $this->Form->input('name',array('class'=>'form-control round-form'));
 		echo $this->Form->radio('gender',array('M'=>'M','F'=>'F'));
-		echo $this->Form->input('zone');
-		echo $this->Form->input('disctrict');
-		echo $this->Form->input('docnr');
+		echo $this->Form->input('zone',array('class'=>'form-control round-form'));
+		echo $this->Form->input('disctrict',array('class'=>'form-control round-form'));
+		echo $this->Form->input('docnr',array('class'=>'form-control round-form'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

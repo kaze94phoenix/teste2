@@ -3,12 +3,12 @@
 	<fieldset>
 		<legend><?php echo __('Add Film'); ?></legend>
 	<?php
-		echo $this->Form->input('title');
-		echo $this->Form->input('sinopse');
-		echo $this->Form->input('category');
-		echo $this->Form->input('actor');
-		echo $this->Form->input('author');
-		echo $this->Form->input('status_id');
+		echo $this->Form->input('title',array('class'=>'form-control round-form'));
+		echo $this->Form->input('sinopse',array('class'=>'form-control round-form'));
+		echo $this->Form->input('category',array('class'=>'form-control round-form'));
+		echo $this->Form->input('actor',array('class'=>'form-control round-form'));
+		echo $this->Form->input('author',array('class'=>'form-control round-form'));
+		echo $this->Form->input('status_id',array('class'=>'form-control round-form'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

@@ -3,11 +3,11 @@
 	<fieldset>
 		<legend><?php echo __('Add Borrow'); ?></legend>
 	<?php
-		echo $this->Form->input('retrievedate');
-		echo $this->Form->input('client_id');
-		echo $this->Form->input('film_id');
-                echo $this->Form->input('copies');
-		echo $this->Form->input('retrieved');
+		echo $this->Form->input('retrievedate',array('class'=>'form-control round-form'));
+		echo $this->Form->input('client_id',array('class'=>'form-control round-form'));
+		echo $this->Form->input('film_id',array('class'=>'form-control round-form'));
+                echo $this->Form->input('copies',array('class'=>'form-control round-form'));
+		echo $this->Form->input('retrieved',array('class'=>'form-control round-form'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

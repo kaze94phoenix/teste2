@@ -4,7 +4,7 @@
 		<legend><?php echo __('Edit Status'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('designation');
+		echo $this->Form->input('designation',array('class'=>'form-control round-form'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
