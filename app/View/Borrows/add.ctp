@@ -16,10 +16,10 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Borrows'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Clients'), array('controller' => 'clients', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Client'), array('controller' => 'clients', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Films'), array('controller' => 'films', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Film'), array('controller' => 'films', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Borrows'), array('action' => 'index'),array('class'=>'btn btn-round btn-primary', 'type'=>'button')); ?></li>
+		<li><?php echo $this->Html->link(__('List Clients'), array('controller' => 'clients', 'action' => 'index'),array('class'=>'btn btn-round btn-primary', 'type'=>'button')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Client'), array('controller' => 'clients', 'action' => 'add'),array('class'=>'btn btn-round btn-primary', 'type'=>'button')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Films'), array('controller' => 'films', 'action' => 'index'),array('class'=>'btn btn-round btn-primary', 'type'=>'button')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Film'), array('controller' => 'films', 'action' => 'add'),array('class'=>'btn btn-round btn-primary', 'type'=>'button')); ?> </li>
 	</ul>
 </div>
