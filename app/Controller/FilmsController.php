@@ -71,7 +71,9 @@ class FilmsController extends AppController {
 				$this->Session->setFlash(__('The film could not be saved. Please, try again.'));
 			}
 		}
-		$statuses = $this->Film->Status->find('list');
+		$statuses = $this->Film->Status->find('list',array(
+                    'fields'=>array('Status.designation')
+                    ));
 		$this->set(compact('statuses'));
 	}
 
@@ -97,7 +99,9 @@ class FilmsController extends AppController {
 			$options = array('conditions' => array('Film.' . $this->Film->primaryKey => $id));
 			$this->request->data = $this->Film->find('first', $options);
 		}
-		$statuses = $this->Film->Status->find('list');
+		$statuses = $this->Film->Status->find('list',array(
+                    'fields'=>array('Status.designation')
+                    ));
 		$this->set(compact('statuses'));
 	}
 

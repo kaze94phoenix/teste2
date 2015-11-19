@@ -10,7 +10,7 @@
 		echo $this->Form->input('docnr',array('class'=>'form-control round-form'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Submit'),array('class'=>'btn btn-round btn-default', 'type'=>'button')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

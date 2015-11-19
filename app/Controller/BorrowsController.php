@@ -56,7 +56,11 @@ class BorrowsController extends AppController {
 			}
 		}
 		$clients = $this->Borrow->Client->find('list');
-		$films = $this->Borrow->Film->find('list');
+		$films = $this->Borrow->Film->find('list',array(
+                    'conditions'=>array(
+                        'Film.status_id !='=>3
+                    )
+                ));
 		$this->set(compact('clients', 'films'));
 	}
 
